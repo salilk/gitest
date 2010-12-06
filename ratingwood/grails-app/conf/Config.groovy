@@ -49,7 +49,7 @@ facebookConnect.faceBookPermissions = "offline_access,publish_stream,user_about_
 // set per-environment serverURL stem for creating absolute links
 environments {
     production {
-        grails.serverURL = "http://www.changeme.com"
+        grails.serverURL = "http://qa.rainmaker.intelligrape.net:9191/ratingwood/"
 
         facebookConnect {
             AppId = "173902212638700"
@@ -57,6 +57,7 @@ environments {
             SecretKey = "b6805724ae42f1aa625bccfc45db8caa"
         }
     }
+    
     development {
         grails.serverURL = "http://localhost:8080/${appName}"
 

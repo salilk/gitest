@@ -6,7 +6,7 @@ import org.codehaus.groovy.grails.commons.ConfigurationHolder as CH
 class LoginController {
 
     def facebookConnect = {
-        String facebookAuthorizeUrl = "https://graph.facebook.com/oauth/authorize?client_id=${CH.config.facebookConnect.AppId}&redirect_uri=${CH.config.grails.serverURL}/login/getFacebookToken/"//&scope=${CH.config.facebookConnect.faceBookPermissions}
+        String facebookAuthorizeUrl = "https://graph.facebook.com/oauth/authorize?client_id=${CH.config.facebookConnect.AppId}&redirect_uri=${CH.config.grails.serverURL}/login/getFacebookToken/&scope=${CH.config.facebookConnect.faceBookPermissions}"
         println "facebookAuthorizeUrl: ${facebookAuthorizeUrl}"
         redirect(url: facebookAuthorizeUrl)
     }
